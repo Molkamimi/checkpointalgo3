@@ -1,0 +1,42 @@
+ Procedure dot_product (v1,v2 :array )
+VAR
+ i:integer;
+BEGIN     
+   FOR i FROM 0 TO v1.length STEP   DO
+       ps:=ps+v1[i]*v2[i]
+   END_FOR
+
+END
+
+ALGORITHM the_orthogonality of two products
+VAR
+    v1,v2:array;
+    i:integer;
+BEGIN
+   FOR i FROM 0 TO v1.length STEP  DO
+       write(v1,v2)
+   END_FOR
+   IF (dotproduct(v1[i],v2[j])===0) THEN
+       write("v1 and v2 are orthogonals")
+      ELSE
+        write("v1 and v2 are not orhogonals")
+      END_IF
+
+END
+
+
+  FUNCTION dot_product(v1,v2) 
+  VAR
+      v1,v2:array;
+      i:integer;
+  BEGIN
+    REPEAT
+        read (v1,v2)
+    FOR i FROM 0  TO v.length STEP   DO
+        
+            ps = ps + v1[i] * v2[i]; 
+             RETURN ps ;
+    END_FOR 
+
+     
+  END
